@@ -149,19 +149,19 @@ Help.TextSize = 18.000
 Help.TextWrapped = true
 
 R.Name = "R"
-R.Parent = Top
+R.Parent = Stigma
 R.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 R.BackgroundTransparency = 5.000
 R.BorderColor3 = Color3.fromRGB(0, 0, 0)
 R.BorderSizePixel = 0
-R.Position = UDim2.new(-0.941860557, 0, 12.7352943, 0)
+R.Position = UDim2.new(0.0396975428, 0, 0.817164183, 0)
 R.Size = UDim2.new(0, 100, 0, 100)
 R.Visible = false
 R.Image = "rbxassetid://17661082794"
 
 -- Scripts:
 
-local function ZZDQNH_fake_script() -- Top.Notification 
+local function VQLF_fake_script() -- Top.Notification 
 	local script = Instance.new('LocalScript', Top)
 
 	function SendNotification(title, text, duration)
@@ -176,24 +176,8 @@ local function ZZDQNH_fake_script() -- Top.Notification
 	
 	SendNotification("Inject...", "Stigma Loaded!", 3)
 end
-coroutine.wrap(ZZDQNH_fake_script)()
-local function FEXM_fake_script() -- Holder.LocalScript 
-	local script = Instance.new('LocalScript', Holder)
-
-	script.Parent.Clear.MouseButton1Click:Connect(function()
-		script.Parent.Textbox.Text = "\n\n"
-	end)
-	
-	script.Parent.Execute.MouseButton1Click:Connect(function()
-		game:GetService('ReplicatedStorage').RemoteEvent:FireServer(script.Parent.Textbox.Text)
-		--execute script
-		loadstring(script.Parent.Textbox.Text)()
-	end)
-	
-	
-end
-coroutine.wrap(FEXM_fake_script)()
-local function IRFS_fake_script() -- Top.Dragify 
+coroutine.wrap(VQLF_fake_script)()
+local function SLXF_fake_script() -- Top.Dragify 
 	local script = Instance.new('LocalScript', Top)
 
 	--This script has been modified by MetaliumWorks (@jgfuhjkkl_2) [mw/ʍɯ]
@@ -236,12 +220,28 @@ local function IRFS_fake_script() -- Top.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(IRFS_fake_script)()
-local function OQUXVVG_fake_script() -- Top.LocalScript 
-	local script = Instance.new('LocalScript', Top)
+coroutine.wrap(SLXF_fake_script)()
+local function PJPGEYM_fake_script() -- Holder.LocalScript 
+	local script = Instance.new('LocalScript', Holder)
+
+	script.Parent.Clear.MouseButton1Click:Connect(function()
+		script.Parent.Textbox.Text = "\n\n"
+	end)
+	
+	script.Parent.Execute.MouseButton1Click:Connect(function()
+		game:GetService('ReplicatedStorage').RemoteEvent:FireServer(script.Parent.Textbox.Text)
+		--execute script
+		loadstring(script.Parent.Textbox.Text)()
+	end)
+	
+	
+end
+coroutine.wrap(PJPGEYM_fake_script)()
+local function HCIX_fake_script() -- Stigma.LocalScript 
+	local script = Instance.new('LocalScript', Stigma)
 
 	wait(3)
 	script.Parent.R.Visible=true
 	
 end
-coroutine.wrap(OQUXVVG_fake_script)()
+coroutine.wrap(HCIX_fake_script)()
