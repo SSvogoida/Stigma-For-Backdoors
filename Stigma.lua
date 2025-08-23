@@ -15,6 +15,7 @@ local File = Instance.new("TextButton")
 local Extras = Instance.new("TextButton")
 local Lua = Instance.new("TextButton")
 local Help = Instance.new("TextButton")
+local R = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -147,9 +148,20 @@ Help.TextColor3 = Color3.fromRGB(0, 0, 0)
 Help.TextSize = 18.000
 Help.TextWrapped = true
 
+R.Name = "R"
+R.Parent = Top
+R.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R.BackgroundTransparency = 5.000
+R.BorderColor3 = Color3.fromRGB(0, 0, 0)
+R.BorderSizePixel = 0
+R.Position = UDim2.new(-0.941860557, 0, 12.7352943, 0)
+R.Size = UDim2.new(0, 100, 0, 100)
+R.Visible = false
+R.Image = "rbxassetid://17661082794"
+
 -- Scripts:
 
-local function XXNJO_fake_script() -- Top.LocalScript 
+local function ZZDQNH_fake_script() -- Top.Notification 
 	local script = Instance.new('LocalScript', Top)
 
 	function SendNotification(title, text, duration)
@@ -164,8 +176,8 @@ local function XXNJO_fake_script() -- Top.LocalScript
 	
 	SendNotification("Inject...", "Stigma Loaded!", 3)
 end
-coroutine.wrap(XXNJO_fake_script)()
-local function WFMVK_fake_script() -- Holder.LocalScript 
+coroutine.wrap(ZZDQNH_fake_script)()
+local function FEXM_fake_script() -- Holder.LocalScript 
 	local script = Instance.new('LocalScript', Holder)
 
 	script.Parent.Clear.MouseButton1Click:Connect(function()
@@ -180,8 +192,8 @@ local function WFMVK_fake_script() -- Holder.LocalScript
 	
 	
 end
-coroutine.wrap(WFMVK_fake_script)()
-local function QHLVX_fake_script() -- Top.Dragify 
+coroutine.wrap(FEXM_fake_script)()
+local function IRFS_fake_script() -- Top.Dragify 
 	local script = Instance.new('LocalScript', Top)
 
 	--This script has been modified by MetaliumWorks (@jgfuhjkkl_2) [mw/ʍɯ]
@@ -224,4 +236,12 @@ local function QHLVX_fake_script() -- Top.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(QHLVX_fake_script)()
+coroutine.wrap(IRFS_fake_script)()
+local function OQUXVVG_fake_script() -- Top.LocalScript 
+	local script = Instance.new('LocalScript', Top)
+
+	wait(3)
+	script.Parent.R.Visible=true
+	
+end
+coroutine.wrap(OQUXVVG_fake_script)()
